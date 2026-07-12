@@ -1,0 +1,45 @@
+All Available routes:
+
+/api/users ->
+login/ 
+    request: email, password
+    response: access, refresh
+
+refresh/ 
+    request: refresh
+    response: access
+
+me/ (Bearer Token)
+    request: null
+    response: {
+        "id": 2,
+        "username": "krish",
+        "first_name": "",
+        "last_name": "",
+        "email": "krish@gmail.com",
+        "role": ""
+    }
+
+
+/api/fleet ->
+
+drivers/ 
+    (POST) (Bearer Token)
+    request: {
+        "name": "Deepak Joshi",
+        "license_number": "GJ1820220023456",
+        "license_category": "LMV",
+        "license_expiry_date": "2031-01-25",
+        "contact_number": "+919876543214",
+        "status": "available"
+    }
+    response: {
+        "id": 5,
+        "name": "Deepak Joshi",
+        "license_number": "GJ1820220023456",
+        "license_category": "LMV",
+        "license_expiry_date": "2031-01-25",
+        "contact_number": "+919876543214",
+        "status": "available",
+        "created_at": "2026-07-12T06:16:29.409886Z"
+    } (201)

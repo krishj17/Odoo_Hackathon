@@ -1,0 +1,37 @@
+# Database
+*.sqlite3
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Environment
+.env
+
+# Node
+node_modules/
+
+# Build
+dist/
+dist-ssr/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Logs
+*.log
+
+# Archives
+*.rar
+*.zip
+
+# PDFs
+*.pdf
+
+# Design files
+*.excalidraw
